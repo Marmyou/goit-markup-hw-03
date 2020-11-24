@@ -16,36 +16,38 @@
     <title>Главная</title>
   </head>
   <body>
-    <header class="header">
-      <div class="container">
+    <header class="page-header">
+      <div class="container header">
         <nav class="header-nav">
-          <a class="header-logo" href="./index.html" lang="en"
-            ><span class="logo-accent">Web</span>Studio</a
+          <a class="logo" href="./index.html" lang="en"
+            ><span class="logo accent">Web</span>Studio</a
           >
-          <ul>
-            <li>
+          <ul class="header-nav list">
+            <li class="item">
               <a class="header-link current" href="./index.html">Студия</a>
             </li>
-            <li>
+            <li class="item">
               <a class="header-link" href="./portfolio.html">Портфолио</a>
             </li>
-            <li><a class="header-link" href="#contact">Контакты</a></li>
+            <li class="item">
+              <a class="header-link" href="#contact">Контакты</a>
+            </li>
           </ul>
         </nav>
-        <address>
-          <ul class="contacts">
-            <li>
-              <a class="contacts-link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a class="contacts-link" href="tel:+380961111111"
-                >+38 096 111 11 11</a
-              >
-            </li>
-          </ul>
-        </address>
+        <!-- <address> -->
+        <ul class="contacts list header">
+          <li class="item">
+            <a class="contacts-link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="item">
+            <a class="contacts-link" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+        <!-- </address> -->
       </div>
     </header>
 
@@ -61,29 +63,29 @@
       <div class="container">
         <section class="advantages">
           <!-- Секция преимуществ. Н2 - скрытый заголовок -->
-          <h2 class="advantages-primary-title">Наши преимущества</h2>
-          <ul>
-            <li>
+          <h2 class="advantages-title-main">Наши преимущества</h2>
+          <ul class="advantages list">
+            <li class="item">
               <h3 class="advantages-title">Внимание к деталям</h3>
               <p class="advantages-text">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="advantages-title">Пунктуальность</h3>
               <p class="advantages-text">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="advantages-title">Планирование</h3>
               <p class="advantages-text">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
-            </li>
+            </li class="item">
             <li>
               <h3 class="advantages-title">Современные технологии</h3>
               <p class="advantages-text">
@@ -98,8 +100,8 @@
       <div class="container">
         <section class="activity">
           <h2 class="activity-title">Чем мы занимаемся</h2>
-          <ul>
-            <li class="activity-list">
+          <ul class="activity list">
+            <li class="activity item">
               <a href="#"
                 ><img
                   src="./images/codding.jpg"
@@ -108,7 +110,7 @@
                   height="294"
               /></a>
             </li>
-            <li class="activity-list">
+            <li class="activity item">
               <a href="#"
                 ><img
                   src="./images/prototyping.jpg"
@@ -117,7 +119,7 @@
                   height="294"
               /></a>
             </li>
-            <li class="activity-list">
+            <li class="activity item">
               <a href="#"
                 ><img
                   src="./images/web-design.jpg"
@@ -133,7 +135,7 @@
         <section class="team">
           <!-- Секция команды студии -->
           <h2 class="team-title">Наша команда</h2>
-          <ul>
+          <ul class="team-card list">
             <li class="team-card">
               <img
                 src="./images/team-one.jpg"
@@ -180,24 +182,24 @@
     </main>
     <footer>
       <div class="container">
-        <a class="footer-logo" href="./index.html" lang="en"
-          ><span class="logo-accent">Web</span>Studio</a
+        <a class="logo footer" href="./index.html" lang="en"
+          ><span class="logo accent">Web</span>Studio</a
         >
         <address>
-          <ul>
-            <li>
+          <ul class="contacts list footer">
+            <li class="item">
               <a
                 class="address-map"
                 href="https://www.google.com/maps/place/бул.+Леси+Украинки,+26,+Киев,+02000/@50.4265807,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
                 >г. Киев, пр-т Леси Украинки, 26</a
               >
             </li>
-            <li id="contact">
+            <li class="item" id="contact">
               <a class="contacts-link" href="mailto:info@example.com"
                 >info@example.com</a
               >
             </li>
-            <li>
+            <li class="item">
               <a class="contacts-link" href="tel:+380991111111"
                 >+38 099 111 11 11</a
               >
