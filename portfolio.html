@@ -16,6 +16,7 @@
     <title>Портфолио</title>
   </head>
   <body>
+    <!-- Секция хедера -->
     <header class="page-header">
       <div class="container header">
         <nav class="header-nav">
@@ -54,134 +55,150 @@
     </header>
     <main>
       <!-- В будущем сделать Н1 скрытым заголовком корректно-->
-      <h1 class="hero-title">Наше портфолио</h1>
-
+      <h1 class="hero-title invisible">Наше портфолио</h1>
       <!-- Временно оформлены как ссылки -->
-      <section class="portfolio">
-        <ul class="portfolio-menu list">
-          <li class="item"><a class="portfolio-menu-button current">Все</a></li>
-          <li class="item"><a class="portfolio-menu-button">Веб-сайты</a></li>
-          <li class="item"><a class="portfolio-menu-button">Приложения</a></li>
-          <li class="item"><a class="portfolio-menu-button">Дизайн</a></li>
-          <li class="item"><a class="portfolio-menu-button">Маркетинг</a></li>
-        </ul>
-        <ul class="portfolio-gallery list">
-          <li class="portfolio-card">
-            <img
-              class="portfolio-card-image"
-              src="./images/project-one.jpg"
-              alt="Команда вебсайта Технокряк"
-              width="340"
-              height="294"
-            />
-            <h2 class="portfolio-card-title">Технокряк</h2>
-            <p class="portfolio-card-text">Веб-сайт</p>
-          </li>
-          <li class="portfolio-card">
-            <img
-              class="portfolio-card-image"
-              src="./images/project-two.jpg"
-              alt="Два баскетболиста в прыжке"
-              width="340"
-              height="294"
-            />
-            <h2 class="portfolio-card-title">
-              Постер <span lang="en">New Orlean vs Golden Star</span>
-            </h2>
-            <p class="portfolio-card-text">Дизайн</p>
-          </li>
-          <li class="portfolio-card">
-            <img
-              class="portfolio-card-image"
-              src="./images/project-three.jpg"
-              alt="Логотип ресторана морепродуктов"
-              width="340"
-              height="294"
-            />
-            <h2 class="portfolio-card-title">
-              Ресторан <span lang="en">Seafood</span>
-            </h2>
-            <p class="portfolio-card-text">Приложение</p>
-          </li>
-          <li class="portfolio-card">
-            <img
-              class="portfolio-card-image"
-              src="./images/project-four.jpg"
-              alt="Беспроводные закрытые наушники"
-              width="340"
-              height="294"
-            />
-            <h2 class="portfolio-card-title">
-              Проект <span lang="en">Prime</span>
-            </h2>
-            <p class="portfolio-card-text">Маркетинг</p>
-          </li>
-          <li class="portfolio-card">
-            <img
-              class="portfolio-card-image"
-              src="./images/project-five.jpg"
-              alt="Две разных коробки"
-              width="340"
-              height="294"
-            />
-            <h2 class="portfolio-card-title">
-              Проект <span lang="en">Boxes</span>
-            </h2>
-            <p class="portfolio-card-text">Приложение</p>
-          </li>
-          <li class="portfolio-card">
-            <img
-              class="portfolio-card-image"
-              src="./images/project-six.jpg"
-              alt="Главная страница вебсайта"
-              width="340"
-              height="294"
-            />
-            <h2 class="portfolio-card-title" lang="en">
-              Inspiration has no Borders
-            </h2>
-            <p class="portfolio-card-text">Веб-сайт</p>
-          </li>
-          <li class="portfolio-card">
-            <img
-              class="portfolio-card-image"
-              src="./images/project-seven.jpg"
-              alt="Разворот открытой книгие"
-              width="340"
-              height="294"
-            />
-            <h2 class="portfolio-card-title">
-              Издание <span lang="en">Limited Edition</span>
-            </h2>
-            <p class="portfolio-card-text">Дизайн</p>
-          </li>
-          <li class="portfolio-card">
-            <img
-              class="portfolio-card-image"
-              src="./images/project-eight.jpg"
-              alt="Белая бирка с подписью"
-              width="340"
-              height="294"
-            />
-            <h2 class="portfolio-card-title">
-              Проект <span lang="en">LAB</span>
-            </h2>
-            <p class="portfolio-card-text">Маркетинг</p>
-          </li>
-          <li class="portfolio-card">
-            <img
-              class="portfolio-card-image"
-              src="./images/project-nine.jpg"
-              alt="Отображение веб-сайта на ноутбуке"
-              width="340"
-              height="294"
-            />
-            <h2 class="portfolio-card-title" lang="en">Growing Business</h2>
-            <p class="portfolio-card-text">Приложение</p>
-          </li>
-        </ul>
+      <section class="portfolio-filter">
+        <div class="container">
+          <ul class="portfolio-filter list">
+            <li class="portfolio-filter-item">
+              <a class="portfolio-filter-button current">Все</a>
+            </li>
+            <li class="portfolio-filter-item">
+              <a class="portfolio-filter-button">Веб-сайты</a>
+            </li>
+            <li class="portfolio-filter-item">
+              <a class="portfolio-filter-button">Приложения</a>
+            </li>
+            <li class="portfolio-filter-item">
+              <a class="portfolio-filter-button">Дизайн</a>
+            </li>
+            <li class="portfolio-filter-item">
+              <a class="portfolio-filter-button">Маркетинг</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="portfolio-gallery">
+        <div class="container">
+          <ul class="portfolio-gallery-list list">
+            <li class="portfolio-card">
+              <img
+                class="portfolio-card-image"
+                src="./images/project-one.jpg"
+                alt="Команда вебсайта Технокряк"
+                width="370"
+                height="294"
+              />
+              <h2 class="portfolio-card-title">Технокряк</h2>
+              <p class="portfolio-card-text">Веб-сайт</p>
+            </li>
+            <li class="portfolio-card">
+              <img
+                class="portfolio-card-image"
+                src="./images/project-two.jpg"
+                alt="Два баскетболиста в прыжке"
+                width="370"
+                height="294"
+              />
+              <h2 class="portfolio-card-title">
+                Постер <span lang="en">New Orlean vs Golden Star</span>
+              </h2>
+              <p class="portfolio-card-text">Дизайн</p>
+            </li>
+            <li class="portfolio-card">
+              <img
+                class="portfolio-card-image"
+                src="./images/project-three.jpg"
+                alt="Логотип ресторана морепродуктов"
+                width="370"
+                height="294"
+              />
+              <h2 class="portfolio-card-title">
+                Ресторан <span lang="en">Seafood</span>
+              </h2>
+              <p class="portfolio-card-text">Приложение</p>
+            </li>
+            <li class="portfolio-card">
+              <img
+                class="portfolio-card-image"
+                src="./images/project-four.jpg"
+                alt="Беспроводные закрытые наушники"
+                width="370"
+                height="294"
+              />
+              <h2 class="portfolio-card-title">
+                Проект <span lang="en">Prime</span>
+              </h2>
+              <p class="portfolio-card-text">Маркетинг</p>
+            </li>
+            <li class="portfolio-card">
+              <img
+                class="portfolio-card-image"
+                src="./images/project-five.jpg"
+                alt="Две разных коробки"
+                width="370"
+                height="294"
+              />
+              <h2 class="portfolio-card-title">
+                Проект <span lang="en">Boxes</span>
+              </h2>
+              <p class="portfolio-card-text">Приложение</p>
+            </li>
+            <li class="portfolio-card">
+              <img
+                class="portfolio-card-image"
+                src="./images/project-six.jpg"
+                alt="Главная страница вебсайта"
+                width="370"
+                height="294"
+              />
+              <h2 class="portfolio-card-title" lang="en">
+                Inspiration has no Borders
+              </h2>
+              <p class="portfolio-card-text">Веб-сайт</p>
+            </li>
+            <li class="portfolio-card">
+              <img
+                class="portfolio-card-image"
+                src="./images/project-seven.jpg"
+                alt="Разворот открытой книгие"
+                width="370"
+                height="294"
+              />
+              <h2 class="portfolio-card-title">
+                Издание <span lang="en">Limited Edition</span>
+              </h2>
+              <p class="portfolio-card-text">Дизайн</p>
+            </li>
+            <li class="portfolio-card">
+              <img
+                class="portfolio-card-image"
+                src="./images/project-eight.jpg"
+                alt="Белая бирка с подписью"
+                width="370"
+                height="294"
+              />
+              <h2 class="portfolio-card-title">
+                Проект <span lang="en">LAB</span>
+              </h2>
+              <p class="portfolio-card-text">Маркетинг</p>
+            </li>
+            <li class="portfolio-card">
+              <img
+                class="portfolio-card-image"
+                src="./images/project-nine.jpg"
+                alt="Отображение веб-сайта на ноутбуке"
+                width="370"
+                height="294"
+              />
+              <h2 class="portfolio-card-title" lang="en">Growing Business</h2>
+              <p class="portfolio-card-text">Приложение</p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
+    <!-- Секция футера -->
     <footer>
       <div class="container">
         <a class="logo footer" href="./index.html" lang="en"

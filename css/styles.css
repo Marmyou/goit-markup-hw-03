@@ -38,7 +38,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 
-  outline: 3px solid tomato;
+  /* outline: 3px solid tomato; */
 }
 
 a {
@@ -53,6 +53,11 @@ a {
 
 address {
   font-style: normal;
+}
+
+.invisible {
+  display: none;
+  margin-top: 0;
 }
 
 .header-link.current,
@@ -88,7 +93,7 @@ address {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  outline: 5px solid red;
+  outline: 2px solid red;
 }
 
 .header-nav {
@@ -181,10 +186,7 @@ address {
   padding-bottom: 94px;
 }
 
-.advantages-title-main {
-  display: none;
-  margin-top: 0;
-}
+/* advantages-title-main - скрыт в блоке utilities*/
 
 .advantages-title {
   margin-top: 0;
@@ -238,9 +240,13 @@ address {
   margin-right: 30px;
 }
 
+.activity-item {
+  width: calc((100%-60px) / 3);
+}
+
 /* Team */
 
-/* Team title прописан в блоке activity, строка 224 */
+/* Team title прописан в блоке activity */
 
 .team.section {
   background-color: var(--secondary-background-color);
@@ -255,6 +261,10 @@ address {
 
 .team-card:not(:last-child) {
   margin-right: 30px;
+}
+
+.team-card {
+  width: calc((100%-90px) / 4);
 }
 
 .team-card {
@@ -297,17 +307,21 @@ footer {
   color: var(--secondary-text-color);
 }
 
-/* Конец блока стилей основы, повторов и главной  */
+/* Начало блока стилей Portfolio */
 
-/* Начало блока стилей страницы Портфолио */
 /* Hero Portfolio */
 
-.hero-title.portfolio {
-  display: none;
-  margin-top: 0;
+/* .hero-title - скрыт в блоке utilities */
+
+/* Portfolio filter */
+
+.portfolio-filter.list {
+  display: flex;
+  padding-top: 94px;
+  justify-content: center;
 }
 
-.portfolio-menu-button {
+.portfolio-filter-button {
   padding: 6px 22px;
   border-radius: 2px;
   border-width: 0;
@@ -320,14 +334,52 @@ footer {
   line-height: 1.62;
 }
 
-.portfolio-menu-button:hover,
-.portfolio-menu-button:focus,
-.portfolio-menu-button.current {
+.portfolio-filter-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.portfolio-filter-button:hover,
+.portfolio-filter-button:focus,
+.portfolio-filter-button.current {
   background-color: var(--accent-color);
   color: var(--secondary-text-color);
 }
 
+/* Portfolio gallery */
+
+/* .portfolio-gallery {
+  background-color: teal;
+} */
+
+.portfolio-gallery-list {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  /* margin: -15px; */
+
+  /* background-color: pink; */
+}
+
+.portfolio-card {
+  width: calc((100%-66px) / 3);
+  /* margin: 15px;
+  width: 371px; */
+  background-color: var(--primary-background-color);
+  border: 1px solid #eeeeee;
+}
+
+.portfolio-card:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.portfolio-card:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+}
+
 .portfolio-card-title {
+  /* padding-left: 24px;
+  padding-right: 24px; */
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -336,6 +388,9 @@ footer {
 }
 
 .portfolio-card-text {
+  padding-left: 24px;
+  padding-right: 24px;
+
   color: var(--tertiary-text-color);
 
   font-size: 16px;
