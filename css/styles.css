@@ -55,7 +55,7 @@ address {
   font-style: normal;
 }
 
-.current,
+.header-link.current,
 .header-link:hover,
 .header-link:focus,
 .contacts-link:hover,
@@ -195,6 +195,31 @@ address {
   text-transform: uppercase;
 }
 
+.advantages-text {
+  margin-top: 0;
+  line-height: 1.71;
+}
+
+.advantages.list {
+  display: flex;
+  /* justify-content: center; */
+  outline: 2px solid greenyellow;
+}
+
+.advantages .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.advantages.list .item {
+  width: calc((100%-90px) / 4);
+}
+
+/* Activity */
+
+.activity {
+  padding-bottom: 94px;
+}
+
 .activity-title,
 .team-title {
   margin: 0 auto 50px auto;
@@ -204,32 +229,40 @@ address {
   text-align: center;
 }
 
-.advantages-text {
-  margin-top: 0;
-  line-height: 1.71;
-}
-
-.advantages .list {
+.activity-list {
   display: flex;
-  justify-content: center;
-  outline: 2xp solid greenyellow;
+  outline: 2px solid hotpink;
 }
 
-.advantages .item:not(:last-child) {
+.activity-item:not(:last-child) {
   margin-right: 30px;
-}
-
-/* Activity */
-
-.activity {
-  padding-bottom: 94px;
 }
 
 /* Team */
 
-.team {
+/* Team title прописан в блоке activity, строка 224 */
+
+.team.section {
   background-color: var(--secondary-background-color);
+  padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.team-card-list {
+  display: flex;
+  outline: 2px solid hotpink;
+}
+
+.team-card:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-card {
+  background-color: var(--primary-background-color);
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-card-title,
@@ -247,7 +280,17 @@ address {
 /* Footer */
 
 footer {
+  padding-top: 60px;
   background-color: #2f303a;
+}
+
+.contacts.list.footer {
+  padding-top: 20px;
+  line-height: 1.71;
+}
+
+.footer .item + .item {
+  padding-top: 9px;
 }
 
 .address-map {
