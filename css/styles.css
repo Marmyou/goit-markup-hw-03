@@ -38,21 +38,27 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 
-  /* outline: 3px solid tomato; */
+  outline: 3px solid tomato;
 }
 
 a {
   text-decoration: none;
 }
 
+address {
+  font-style: normal;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .list {
   padding: 0;
   margin: 0;
   list-style: none;
-}
-
-address {
-  font-style: normal;
 }
 
 .invisible {
@@ -88,18 +94,23 @@ address {
 }
 
 /* Header */
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
 
 .container.header {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  outline: 2px solid red;
+
+  /* outline: 2px solid red; */
 }
 
 .header-nav {
   display: flex;
   align-items: center;
-  outline: 2px solid green;
+
+  /* outline: 2px solid green; */
 
   /* font-weight: 500; */
 }
@@ -121,7 +132,8 @@ address {
 .contacts.list.header {
   display: flex;
   margin-left: auto;
-  outline: 2px solid blue;
+
+  /* outline: 2px solid blue; */
 }
 .contacts.header .item + .item {
   margin-left: 50px;
@@ -147,6 +159,7 @@ address {
   background-color: #2f303a;
   text-align: center;
   padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -163,7 +176,6 @@ address {
 
 .hero-button {
   display: inline-block;
-  margin-bottom: 200px;
   padding: 10px;
   padding-right: 32px;
   padding-bottom: 10px;
@@ -202,17 +214,18 @@ address {
   line-height: 1.71;
 }
 
-.advantages.list {
+.advantages-list {
   display: flex;
   /* justify-content: center; */
-  outline: 2px solid greenyellow;
+
+  /* outline: 2px solid greenyellow; */
 }
 
-.advantages .item:not(:last-child) {
+.advantages-list .item:not(:last-child) {
   margin-right: 30px;
 }
 
-.advantages.list .item {
+.advantages-list .item {
   width: calc((100%-90px) / 4);
 }
 
@@ -224,7 +237,8 @@ address {
 
 .activity-title,
 .team-title {
-  margin: 0 auto 50px auto;
+  margin-top: 0;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -233,7 +247,8 @@ address {
 
 .activity-list {
   display: flex;
-  outline: 2px solid hotpink;
+
+  /* outline: 2px solid hotpink; */
 }
 
 .activity-item:not(:last-child) {
@@ -256,7 +271,8 @@ address {
 
 .team-card-list {
   display: flex;
-  outline: 2px solid hotpink;
+
+  /* outline: 2px solid hotpink; */
 }
 
 .team-card:not(:last-child) {
@@ -273,6 +289,7 @@ address {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  /* overflow: hidden; */
 }
 
 .team-card-title,
@@ -294,13 +311,13 @@ footer {
   background-color: #2f303a;
 }
 
-.contacts.list.footer {
-  padding-top: 20px;
+.contacts.footer {
+  margin-top: 20px;
   line-height: 1.71;
 }
 
 .footer .item + .item {
-  padding-top: 9px;
+  margin-top: 9px;
 }
 
 .address-map {
@@ -315,16 +332,18 @@ footer {
 
 /* Portfolio filter */
 
-.portfolio-filter.list {
-  display: flex;
+.portfolio-filter {
   padding-top: 94px;
+}
+
+.portfolio-filter-list {
+  display: flex;
   justify-content: center;
 }
 
 .portfolio-filter-button {
   padding: 6px 22px;
   border-radius: 2px;
-  border-width: 0;
   text-align: center;
 
   background-color: var(--secondary-background-color);
@@ -343,29 +362,24 @@ footer {
 .portfolio-filter-button.current {
   background-color: var(--accent-color);
   color: var(--secondary-text-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 /* Portfolio gallery */
 
-/* .portfolio-gallery {
-  background-color: teal;
-} */
+.portfolio-gallery {
+  padding-top: 50px;
+  padding-bottom: 94px;
+}
 
 .portfolio-gallery-list {
-  margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
-  /* margin: -15px; */
-
-  /* background-color: pink; */
 }
 
 .portfolio-card {
-  width: calc((100%-66px) / 3);
-  /* margin: 15px;
-  width: 371px; */
   background-color: var(--primary-background-color);
-  border: 1px solid #eeeeee;
 }
 
 .portfolio-card:not(:nth-child(3n)) {
@@ -376,24 +390,27 @@ footer {
   margin-bottom: 30px;
 }
 
-.portfolio-card-title {
-  /* padding-left: 24px;
-  padding-right: 24px; */
+.portfolio-card-content {
+  width: 370px;
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
+
+.portfolio-card-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-
-  letter-spacing: 0.06em;
 }
 
 .portfolio-card-text {
-  padding-left: 24px;
-  padding-right: 24px;
-
   color: var(--tertiary-text-color);
 
   font-size: 16px;
   line-height: 1.87;
 }
-/* Конец блока стилей страницы Портфолио */
