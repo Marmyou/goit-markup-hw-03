@@ -93,6 +93,7 @@ p {
 
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
+  font-weight: 700;
 }
 
 .logo.inverse {
@@ -350,8 +351,8 @@ footer {
 }
 
 .gallery-card {
-  /* width: calc((100%-60px) / 3); */
   width: 370px;
+  /* width: calc((100%-60px) / 3); */
 }
 
 .gallery-card:not(:nth-child(3n)) {
@@ -363,8 +364,8 @@ footer {
 }
 
 .gallery-card-content {
-  padding-right: 23px;
-  padding-left: 23px;
+  padding-right: 24px;
+  padding-left: 24px;
   padding-top: 20px;
   padding-bottom: 20px;
 
@@ -378,6 +379,7 @@ footer {
 .gallery-card-title {
   margin-bottom: 4px;
 
+  color: var(--primary-text-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
