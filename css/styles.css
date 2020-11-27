@@ -66,8 +66,17 @@ p {
   list-style: none;
 }
 
-.invisible {
-  display: none;
+.visuallyhidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .accent,
@@ -308,10 +317,12 @@ footer {
 
 .portfolio-filter {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .filter-list {
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .filter-button {
@@ -340,11 +351,6 @@ footer {
 }
 
 /* Portfolio gallery */
-
-.portfolio-gallery {
-  padding-top: 50px;
-  padding-bottom: 94px;
-}
 
 .gallery-list {
   flex-wrap: wrap;
