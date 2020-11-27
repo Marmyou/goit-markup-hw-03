@@ -39,7 +39,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 
-  outline: 1px solid tomato;
+  /* outline: 1px solid tomato; */
 }
 
 a {
@@ -83,7 +83,7 @@ p {
   display: flex;
   align-items: center;
 
-  outline: 2px solid green;
+  /* outline: 2px solid green; */
 }
 
 /* Logo */
