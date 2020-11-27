@@ -350,7 +350,8 @@ footer {
 }
 
 .gallery-card {
-  width: calc((100%-60px) / 3);
+  /* width: calc((100%-60px) / 3); */
+  width: 370px;
 }
 
 .gallery-card:not(:nth-child(3n)) {
