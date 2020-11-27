@@ -18,25 +18,24 @@
   <body>
     <!-- Секция хедера -->
     <header class="page-header">
-      <div class="container header">
-        <nav class="header-nav">
+      <div class="container header flex">
+        <nav class="header-nav flex">
           <a class="logo" href="./index.html" lang="en"
-            ><span class="logo accent">Web</span>Studio</a
+            ><span class="accent">Web</span>Studio</a
           >
-          <ul class="header-nav list">
-            <li class="item">
-              <a class="header-link current" href="./index.html">Студия</a>
+          <ul class="nav-list list flex">
+            <li class="nav-item">
+              <a class="nav-link current" href="./index.html">Студия</a>
             </li>
-            <li class="item">
-              <a class="header-link" href="./portfolio.html">Портфолио</a>
+            <li class="nav-item">
+              <a class="nav-link" href="./portfolio.html">Портфолио</a>
             </li>
-            <li class="item">
-              <a class="header-link" href="#contact">Контакты</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Контакты</a>
             </li>
           </ul>
         </nav>
-        <!-- <address> -->
-        <ul class="contacts list header">
+        <ul class="contacts-list list flex">
           <li class="item">
             <a class="contacts-link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
@@ -48,26 +47,26 @@
             >
           </li>
         </ul>
-        <!-- </address> -->
       </div>
     </header>
 
     <main>
-      <!-- Секция героя -->
+      <!-- Секция героя - только для этой секции есть фиксированная высота в стилях-->
       <section class="hero">
-        <!-- Временно добавлены паддингы для внешнего соответствия макету -->
-        <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-        <!-- Временно оформлена как ссылка -->
-        <a class="hero-button" href=""
-          ><span class="btn"></span>Заказать услугу</a
-        >
+        <div class="container">
+          <h1 class="hero-title">
+            Эффективные решения<br />для вашего бизнеса
+          </h1>
+          <!-- Временно оформлена как ссылка -->
+          <a class="hero-button" href="">Заказать услугу</a>
+        </div>
       </section>
       <!-- Секция преимуществ-->
       <section class="advantages">
         <div class="container">
           <!-- В будущем сделать Н2 скрытым заголовком корректно-->
           <h2 class="advantages-title-main invisible">Наши преимущества</h2>
-          <ul class="advantages-list list">
+          <ul class="advantages-list list flex">
             <li class="item">
               <h3 class="advantages-title">Внимание к деталям</h3>
               <p class="advantages-text">
@@ -103,7 +102,7 @@
       <section class="activity">
         <div class="container">
           <h2 class="activity-title">Чем мы занимаемся</h2>
-          <ul class="activity-list list">
+          <ul class="activity-list list flex">
             <li class="activity-item">
               <a href="#"
                 ><img
@@ -132,48 +131,34 @@
       <section class="team section">
         <div class="container">
           <h2 class="team-title">Наша команда</h2>
-          <ul class="team-card-list list">
+          <ul class="team-card-list list flex">
             <li class="team-card">
-              <img
-                src="./images/team-one.jpg"
-                alt="Дизайнер продукта"
-                width="270"
-                height="260"
-              />
-              <h3 class="team-card-title">Игорь Демьяненко</h3>
-              <p class="team-card-text" lang="en">Product designer</p>
+              <img src="./images/team-one.jpg" alt="Дизайнер продукта" />
+              <div class="team-card-content">
+                <h3 class="team-card-title">Игорь Демьяненко</h3>
+                <p class="team-card-text" lang="en">Product designer</p>
+              </div>
             </li>
             <li class="team-card">
-              <img
-                src="./images/team-two.jpg"
-                alt="Фронтенд разработчик"
-                width="270"
-                height="260"
-              />
-              <div class="team-card-bg">
+              <img src="./images/team-two.jpg" alt="Фронтенд разработчик" />
+              <div class="team-card-content">
                 <h3 class="team-card-title">Ольга Репина</h3>
                 <p class="team-card-text" lang="en">Frontend developer</p>
               </div>
             </li>
             <li class="team-card">
-              <img
-                src="./images/team-three.jpg"
-                alt="Маркетолог"
-                width="270"
-                height="260"
-              />
-              <h3 class="team-card-title">Николай Тарасов</h3>
-              <p class="team-card-text" lang="en">Marketing</p>
+              <img src="./images/team-three.jpg" alt="Маркетолог" />
+              <div class="team-card-content">
+                <h3 class="team-card-title">Николай Тарасов</h3>
+                <p class="team-card-text" lang="en">Marketing</p>
+              </div>
             </li>
             <li class="team-card">
-              <img
-                src="./images/team-four.jpg"
-                alt="Дизайнер интерфейса"
-                width="270"
-                height="260"
-              />
-              <h3 class="team-card-title">Михаил Ермаков</h3>
-              <p class="team-card-text" lang="en">UI designer</p>
+              <img src="./images/team-four.jpg" alt="Дизайнер интерфейса" />
+              <div class="team-card-content">
+                <h3 class="team-card-title">Михаил Ермаков</h3>
+                <p class="team-card-text" lang="en">UI designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -182,14 +167,14 @@
     <!-- Секция футера -->
     <footer>
       <div class="container">
-        <a class="logo footer" href="./index.html" lang="en"
-          ><span class="logo accent">Web</span>Studio</a
+        <a class="logo inverse" href="./index.html" lang="en"
+          ><span class="accent">Web</span>Studio</a
         >
         <address>
-          <ul class="contacts list footer">
+          <ul class="contacts-footer list">
             <li class="item">
               <a
-                class="address-map"
+                class="address-google"
                 href="https://www.google.com/maps/place/бул.+Леси+Украинки,+26,+Киев,+02000/@50.4265807,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
                 >г. Киев, пр-т Леси Украинки, 26</a
               >

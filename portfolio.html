@@ -18,27 +18,24 @@
   <body>
     <!-- Секция хедера -->
     <header class="page-header">
-      <div class="container header">
-        <nav class="header-nav">
+      <div class="container header flex">
+        <nav class="header-nav flex">
           <a class="logo" href="./index.html" lang="en"
-            ><span class="logo accent">Web</span>Studio</a
+            ><span class="accent">Web</span>Studio</a
           >
-          <ul class="header-nav list">
-            <li class="item">
-              <a class="header-link" href="./index.html">Студия</a>
+          <ul class="nav-list list flex">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Студия</a>
             </li>
-            <li class="item">
-              <a class="header-link current" href="./portfolio.html"
-                >Портфолио</a
-              >
+            <li class="nav-item">
+              <a class="nav-link current" href="./portfolio.html">Портфолио</a>
             </li>
-            <li class="item">
-              <a class="header-link" href="#contact">Контакты</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Контакты</a>
             </li>
           </ul>
         </nav>
-        <!-- <address> -->
-        <ul class="contacts list header">
+        <ul class="contacts-list list flex">
           <li class="item">
             <a class="contacts-link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
@@ -50,157 +47,167 @@
             >
           </li>
         </ul>
-        <!-- </address> -->
       </div>
     </header>
+
     <main>
       <!-- В будущем сделать Н1 скрытым заголовком корректно-->
       <h1 class="hero-title invisible">Наше портфолио</h1>
       <!-- Временно оформлены как ссылки -->
       <section class="portfolio-filter">
         <div class="container">
-          <ul class="portfolio-filter-list list">
-            <li class="portfolio-filter-item">
-              <a class="portfolio-filter-button current">Все</a>
+          <ul class="filter-list list flex">
+            <li class="filter-item">
+              <a class="filter-button current">Все</a>
             </li>
-            <li class="portfolio-filter-item">
-              <a class="portfolio-filter-button">Веб-сайты</a>
+            <li class="filter-item">
+              <a class="filter-button">Веб-сайты</a>
             </li>
-            <li class="portfolio-filter-item">
-              <a class="portfolio-filter-button">Приложения</a>
+            <li class="filter-item">
+              <a class="filter-button">Приложения</a>
             </li>
-            <li class="portfolio-filter-item">
-              <a class="portfolio-filter-button">Дизайн</a>
+            <li class="filter-item">
+              <a class="filter-button">Дизайн</a>
             </li>
-            <li class="portfolio-filter-item">
-              <a class="portfolio-filter-button">Маркетинг</a>
+            <li class="filter-item">
+              <a class="filter-button">Маркетинг</a>
             </li>
           </ul>
         </div>
       </section>
       <section class="portfolio-gallery">
         <div class="container">
-          <ul class="portfolio-gallery-list list">
-            <li class="portfolio-card">
-              <img
-                class="portfolio-card-image"
-                src="./images/project-one.jpg"
-                alt="Команда вебсайта Технокряк"
-                width="370"
-              />
-              <div class="portfolio-card-content">
-                <h2 class="portfolio-card-title">Технокряк</h2>
-                <p class="portfolio-card-text">Веб-сайт</p>
+          <ul class="gallery-list list flex">
+            <li class="gallery-card">
+              <div class="gallery-card-container">
+                <img
+                  class="gallery-card-image"
+                  src="./images/project-one.jpg"
+                  alt="Команда вебсайта Технокряк"
+                />
+                <div class="gallery-card-content">
+                  <h2 class="gallery-card-title">Технокряк</h2>
+                  <p class="gallery-card-text">Веб-сайт</p>
+                </div>
               </div>
             </li>
-            <li class="portfolio-card">
-              <img
-                class="portfolio-card-image"
-                src="./images/project-two.jpg"
-                alt="Два баскетболиста в прыжке"
-                width="370"
-              />
-              <div class="portfolio-card-content">
-                <h2 class="portfolio-card-title">
-                  Постер <span lang="en">New Orlean vs Golden Star</span>
-                </h2>
-                <p class="portfolio-card-text">Дизайн</p>
+            <li class="gallery-card">
+              <div class="gallery-card-container">
+                <img
+                  class="gallery-card-image"
+                  src="./images/project-two.jpg"
+                  alt="Два баскетболиста в прыжке"
+                />
+                <div class="gallery-card-content">
+                  <h2 class="gallery-card-title">
+                    Постер <span lang="en">New Orlean vs Golden Star</span>
+                  </h2>
+                  <p class="gallery-card-text">Дизайн</p>
+                </div>
               </div>
             </li>
-            <li class="portfolio-card">
-              <img
-                class="portfolio-card-image"
-                src="./images/project-three.jpg"
-                alt="Логотип ресторана морепродуктов"
-                width="370"
-              />
-              <div class="portfolio-card-content">
-                <h2 class="portfolio-card-title">
-                  Ресторан <span lang="en">Seafood</span>
-                </h2>
-                <p class="portfolio-card-text">Приложение</p>
+            <li class="gallery-card">
+              <div class="gallery-card-container">
+                <img
+                  class="gallery-card-image"
+                  src="./images/project-three.jpg"
+                  alt="Логотип ресторана морепродуктов"
+                />
+                <div class="gallery-card-content">
+                  <h2 class="gallery-card-title">
+                    Ресторан <span lang="en">Seafood</span>
+                  </h2>
+                  <p class="gallery-card-text">Приложение</p>
+                </div>
               </div>
             </li>
-            <li class="portfolio-card">
-              <img
-                class="portfolio-card-image"
-                src="./images/project-four.jpg"
-                alt="Беспроводные закрытые наушники"
-                width="370"
-              />
-              <div class="portfolio-card-content">
-                <h2 class="portfolio-card-title">
-                  Проект <span lang="en">Prime</span>
-                </h2>
-                <p class="portfolio-card-text">Маркетинг</p>
+            <li class="gallery-card">
+              <div class="gallery-card-container">
+                <img
+                  class="gallery-card-image"
+                  src="./images/project-four.jpg"
+                  alt="Беспроводные закрытые наушники"
+                />
+                <div class="gallery-card-content">
+                  <h2 class="gallery-card-title">
+                    Проект <span lang="en">Prime</span>
+                  </h2>
+                  <p class="gallery-card-text">Маркетинг</p>
+                </div>
               </div>
             </li>
-            <li class="portfolio-card">
-              <img
-                class="portfolio-card-image"
-                src="./images/project-five.jpg"
-                alt="Две разных коробки"
-                width="370"
-              />
-              <div class="portfolio-card-content">
-                <h2 class="portfolio-card-title">
-                  Проект <span lang="en">Boxes</span>
-                </h2>
-                <p class="portfolio-card-text">Приложение</p>
+            <li class="gallery-card">
+              <div class="gallery-card-container">
+                x
+                <img
+                  class="gallery-card-image"
+                  src="./images/project-five.jpg"
+                  alt="Две разные коробки"
+                />
+                <div class="gallery-card-content">
+                  <h2 class="gallery-card-title">
+                    Проект <span lang="en">Boxes</span>
+                  </h2>
+                  <p class="gallery-card-text">Приложение</p>
+                </div>
               </div>
             </li>
-            <li class="portfolio-card">
-              <img
-                class="portfolio-card-image"
-                src="./images/project-six.jpg"
-                alt="Главная страница вебсайта"
-                width="370"
-              />
-              <div class="portfolio-card-content">
-                <h2 class="portfolio-card-title" lang="en">
-                  Inspiration has no Borders
-                </h2>
-                <p class="portfolio-card-text">Веб-сайт</p>
+            <li class="gallery-card">
+              <div class="gallery-card-container">
+                <img
+                  class="gallery-card-image"
+                  src="./images/project-six.jpg"
+                  alt="Главная страница вебсайта"
+                />
+                <div class="gallery-card-content">
+                  <h2 class="gallery-card-title" lang="en">
+                    Inspiration has no Borders
+                  </h2>
+                  <p class="gallery-card-text">Веб-сайт</p>
+                </div>
               </div>
             </li>
-            <li class="portfolio-card">
-              <img
-                class="portfolio-card-image"
-                src="./images/project-seven.jpg"
-                alt="Разворот открытой книгие"
-                width="370"
-              />
-              <div class="portfolio-card-content">
-                <h2 class="portfolio-card-title">
-                  Издание <span lang="en">Limited Edition</span>
-                </h2>
-                <p class="portfolio-card-text">Дизайн</p>
+            <li class="gallery-card">
+              <div class="gallery-card-container">
+                <img
+                  class="gallery-card-image"
+                  src="./images/project-seven.jpg"
+                  alt="Разворот открытой книгие"
+                />
+                <div class="gallery-card-content">
+                  <h2 class="gallery-card-title">
+                    Издание <span lang="en">Limited Edition</span>
+                  </h2>
+                  <p class="gallery-card-text">Дизайн</p>
+                </div>
               </div>
             </li>
-            <li class="portfolio-card">
-              <img
-                class="portfolio-card-image"
-                src="./images/project-eight.jpg"
-                alt="Белая бирка с подписью"
-                width="370"
-              />
-              <div class="portfolio-card-content">
-                <h2 class="portfolio-card-title">
-                  Проект <span lang="en">LAB</span>
-                </h2>
-                <p class="portfolio-card-text">Маркетинг</p>
+            <li class="gallery-card">
+              <div class="gallery-card-container">
+                <img
+                  class="gallery-card-image"
+                  src="./images/project-eight.jpg"
+                  alt="Белая бирка с подписью"
+                />
+                <div class="gallery-card-content">
+                  <h2 class="gallery-card-title">
+                    Проект <span lang="en">LAB</span>
+                  </h2>
+                  <p class="gallery-card-text">Маркетинг</p>
+                </div>
               </div>
             </li>
-            <li class="portfolio-card">
-              <img
-                class="portfolio-card-image"
-                src="./images/project-nine.jpg"
-                alt="Отображение веб-сайта на ноутбуке"
-                width="370"
-              />
-              <div class="portfolio-card-content">
-                <h2 class="portfolio-card-title" lang="en">Growing Business</h2>
-                <p class="portfolio-card-text">Приложение</p>
+            <li class="gallery-card">
+              <div class="gallery-card-container">
+                <img
+                  class="gallery-card-image"
+                  src="./images/project-nine.jpg"
+                  alt="Отображение веб-сайта на ноутбуке"
+                />
+                <div class="gallery-card-content">
+                  <h2 class="gallery-card-title" lang="en">Growing Business</h2>
+                  <p class="gallery-card-text">Приложение</p>
+                </div>
               </div>
             </li>
           </ul>
@@ -210,14 +217,14 @@
     <!-- Секция футера -->
     <footer>
       <div class="container">
-        <a class="logo footer" href="./index.html" lang="en"
-          ><span class="logo accent">Web</span>Studio</a
+        <a class="logo inverse" href="./index.html" lang="en"
+          ><span class="accent">Web</span>Studio</a
         >
         <address>
-          <ul class="contacts list footer">
+          <ul class="contacts-footer list">
             <li class="item">
               <a
-                class="address-map"
+                class="address-google"
                 href="https://www.google.com/maps/place/бул.+Леси+Украинки,+26,+Киев,+02000/@50.4265807,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
                 >г. Киев, пр-т Леси Украинки, 26</a
               >
