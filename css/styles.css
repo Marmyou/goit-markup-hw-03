@@ -116,10 +116,6 @@ p {
   border-bottom: 1px solid #ececec;
 }
 
-.container.header {
-  justify-content: space-between;
-}
-
 .nav-list {
   margin-left: 94px;
 }
@@ -141,8 +137,6 @@ p {
 
 .contacts-list {
   margin-left: auto;
-  padding-top: 32px;
-  padding-bottom: 32px;
   font-weight: 500;
   letter-spacing: 0.02em;
 }
@@ -162,14 +156,17 @@ p {
 .hero {
   text-align: center;
   /* Фиксированная высота в стилях для будущего фона */
-  height: 600px;
+  /* height: 600px; */
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: #2f303a;
 }
 
 .hero-title {
+  width: 696px;
   margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
 
   color: var(--secondary-text-color);
   text-transform: uppercase;
@@ -181,7 +178,7 @@ p {
 
 .hero-button {
   display: inline-block;
-  align-items: center;
+  /* align-items: center; */
   padding: 10px;
   padding-right: 32px;
   padding-bottom: 10px;
@@ -192,7 +189,6 @@ p {
   background-color: var(--accent-color);
   color: var(--secondary-text-color);
 
-  text-align: center;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -203,6 +199,10 @@ p {
 .advantages {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.advantages-list {
+  align-items: flex-start;
 }
 
 /* advantages-title-main - скрыт в блоке utilities*/
@@ -224,7 +224,7 @@ p {
 }
 
 .advantages-list .item {
-  width: calc((100%-90px) / 4);
+  width: calc((100% - 90px) / 4);
 }
 
 /* Activity */
@@ -246,7 +246,7 @@ p {
 }
 
 .activity-item {
-  width: calc((100%-60px) / 3);
+  width: calc((100% - 60px) / 3);
 }
 
 /* Team */
@@ -264,7 +264,7 @@ p {
 }
 
 .team-card {
-  width: calc((100%-90px) / 4);
+  width: calc((100% - 90px) / 4);
 }
 
 .team-card {
@@ -290,7 +290,7 @@ p {
 
 /* Footer */
 
-footer {
+.page-footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
@@ -357,8 +357,7 @@ footer {
 }
 
 .gallery-card {
-  width: 370px;
-  /* width: calc((100%-60px) / 3); */
+  width: calc((100% - 60px) / 3);
 }
 
 .gallery-card:not(:nth-child(3n)) {
